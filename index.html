@@ -18,13 +18,13 @@ Vtątjćksńę. <br>
 
 	<a href="decoder.py" download>DecoderI</a>
 	<div>DecoderII (use in powershell) - """$videoSize = 7038395 <br>
-$outputFile = "h.mp4"<br>
-$recoveredFile = "recovered.txt"<br>
-$fs = [System.IO.File]::OpenRead($outputFile)<br>
-$fs.Seek($videoSize, 'Begin') | Out-Null<br>
-$buffer = New-Object byte[] ($fs.Length - $videoSize)<br>
-$fs.Read($buffer, 0, $buffer.Length) | Out-Null<br>
-$fs.Close()<br>
+$outputFile = "h.mp4" <br>
+$recoveredFile = "recovered.txt" <br>
+$fs = [System.IO.File]::OpenRead($outputFile) <br>
+$fs.Seek($videoSize, 'Begin') | Out-Null <br>
+$buffer = New-Object byte[] ($fs.Length - $videoSize) <br>
+$fs.Read($buffer, 0, $buffer.Length) | Out-Null <br>
+$fs.Close() <br>
 [System.IO.File]::WriteAllBytes($recoveredFile, $buffer)"""</div>
 
 </body>
