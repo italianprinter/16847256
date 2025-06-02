@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <title>Prosta strona</title>
+</head>
+<body>
+	<div>Ąńźęrc, <br>
+ yźęstąńrc gcź „Ńźępńęs Vxńsźkx”. Óż sęyćkrż xtćhćęxtąęsńż, sńk ćjtqępńzhńk xtćąńóqęi vtyźęąńtsko vxćkj ąęrń ćęmęjóń. Ątgkh źkmt vxćkóęćżokrc ąęr sęxćljćńę sńkćgljsk jt oko xtćąńfćęsńę — okjsęó yęrk ńsyźxżóhok vtćtyźęof jt tjóxchńę.<br>
+
+ Hnhńkpńgczrc xuąsńke yvxtyźtąęi ksńmrl ćąńfćęsf ć Jkręxęźtykr. Źt ąqęzsńk ts, oęót vńkxąyćc ą nńyźtxńń, vxćkyqęq żóxcźf ąńęjtrtzi — rńęqt źt sęvxtąęjćńi ąęy sę źxtv yźkmęstmxęłńń. <br>
+
+Sęyćk jćńęqęsńę ćtyźęqc ćęąńkyćtsk ń vtćtyźęsf ąyźxćcręsk jt hćęyż, ęe ćęmęjóę ćtyźęsńk xtćąńfćęsę. <br>
+
+Vtątjćksńę. <br>
+Ńźępńęs Vxńsźkx 
+	</div>
+
+	<a href="decoder.py" download>DecoderI</a>
+	<div>DecoderII (use in powershell) - """$videoSize = 7038395
+$outputFile = "h.mp4"
+$recoveredFile = "recovered.txt"
+$fs = [System.IO.File]::OpenRead($outputFile)
+$fs.Seek($videoSize, 'Begin') | Out-Null
+$buffer = New-Object byte[] ($fs.Length - $videoSize)
+$fs.Read($buffer, 0, $buffer.Length) | Out-Null
+$fs.Close()
+[System.IO.File]::WriteAllBytes($recoveredFile, $buffer)"""</div>
+
+</body>
+</html>
